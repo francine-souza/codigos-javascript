@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste condicional IF : Exemplos de Uso</title>
+     
+    <script type="text/javascript">
+     /*function entrar(){
+      var idade = document.getElementById("idade").value;
+      idade = parseInt(idade);
+      if(idade<18){
+          alert("Você tem:" + idade + "anos,"  + " menores de idade não tem permissão de acesso");
+      }*/
+
+      function entrar(){
+          var idade = parseInt(document.getElementById("idade").value)
+          if(idade<18){
+          alert("Você tem:" + idade + "anos,"  + " menores de idade não tem permissão de acesso");
+      }
+
+
+     }
+    
+    </script>
+    
+
+</head>
+<body>
+    Digite sua idade:
+    <input id="idade"    type="text">
+    <button onclick="entrar()">Verificar</button>
+</body>
+</html>

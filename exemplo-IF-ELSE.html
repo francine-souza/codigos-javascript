@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de IF e Else</title>
+    
+    Digite sua idade:
+    <input id="idade" type="number">
+    <button onclick="Aposentar()">OK</button>
+
+    <script type="text/javascript">
+      function Aposentar(){
+          var idade = document.getElementById("idade").value;
+          idade = parseInt(idade);
+          if(idade>=65){
+           alert("Parabéns você já pode se aposentar");  
+          }else
+          alert("Ainda falta " + (65-idade) + " para você se aposentar");
+      }
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

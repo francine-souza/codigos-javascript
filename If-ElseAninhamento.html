@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF ELSE dentro de IF ELSE - Aninhamento</title>
+
+    Se for menor que 16 a idade? Cai no primeiro if e acabou o script, não pode votar
+    Se for 16 ou mais? Ai vai pro else
+    Dentro desse else, testamos se é menor que 18...se for, tem 16 ou mais e menos que 18, logo é facultativo
+    Se tem 18 ou mais, vai pra um novo else
+    Dentro desse novo else, testamos se tem mais de 65, se sim, voto é facultativo
+    Se não tiver mais de 65, é porque tem 18 anos ou mais e 65 anos ou menos, logo o voto é obrigatório </br></br>
+
+    <script type="text/javascript">
+
+        function votar() { 
+
+            var idade = parseInt(document.getElementById("idade").value);
+
+            if (idade < 16) {
+                alert("Você ainda não pode votar");
+            }
+            else {
+                if (idade < 18) {
+                    alert("Seu voto é facultativo");
+                }
+                else {
+                    if (idade > 65) {
+                        alert("Seu voto é facultativo");
+                    }
+                    else {
+                        alert("seu voto é obrigatório");
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <input id="idade" type="number">
+    <button onclick="votar()">Ok</button> <br />
+
+</body>
+
+</html>

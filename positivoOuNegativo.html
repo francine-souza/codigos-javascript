@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positivo ou Negativo em JavaScript</title>
+    <script>
+        /*"Escreva um script em JS que vai solicitar ao usuário um número.
+        Em seguida, vai verificar e dizer se ele é positivo ou negativo."*/
+
+        function teste() {
+            var numero = parseFloat(document.getElementById("numero").value);
+            if (numero > 0)
+                alert(numero + " é positivo");
+            else
+                if (numero < 0)
+            alert(numero + " é negativo");
+                else
+            alert("nem positivo nem negativo, nulo");
+        }
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <input id="numero" type="number">
+    <button onclick="teste()">Testar</button>
+
+</body>
+
+</html>

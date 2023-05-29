@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario input</title>
+   
+    <h2>Formulário de input - Receber dados do usuário no JS</h2>
+
+<Script>
+function enviar(){
+    var valor = document.getElementById("textInput").value;
+    alert ("voce digitou:" + valor);
+}
+</Script>
+</head>
+<body>
+    <input id = "textInput" name = "textInput"  value = ""  type ="text">
+    <button onclick = "enviar()">Confirmar</button>
+</body>
+</html>

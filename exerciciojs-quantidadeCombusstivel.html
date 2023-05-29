@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios JS</title>
+</head>
+<body>
+    <script>
+/* faz 20 km com 1 litro de combustível.
+Cada litro de combustível custa R$ 5,00.
+Faça um programa que pergunte ao usuário quanto de dinheiro ele tem e em seguida diga 
+litros de combustível ele pode comprar e quantos kilometros o carro consegue andar com 
+  de combustível.*/
+
+      
+       
+       var quantidadeDinheiro = parseFloat(prompt("quanto de dinheiro você tem?"));
+       var quantidadeCombustivel= parseFloat(quantidadeDinheiro/5);
+       var quantidadeKilometro = parseFloat(quantidadeCombustivel*20);
+
+          document.write("Com o valor de " + quantidadeDinheiro +  "  reais você poderá comprar " + 
+          quantidadeCombustivel + " litros de gasolina e poderá percorrer " + quantidadeKilometro + " kilometros");
+
+
+
+
+
+
+    </script>
+</body>
+</html>

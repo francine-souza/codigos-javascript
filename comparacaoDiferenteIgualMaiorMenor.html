@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wthid=device-width, initial-scale=1.0">
+    <title>Operadores de comparaçao</title>
+
+    <script type="text/javascript">
+    function igual(){
+        alert(document.getElementById("igual1").value == document.getElementById("igual2").value);
+    }
+    function diferente(){
+        alert(document.getElementById("diferente1").value != document.getElementById("diferente2").value);
+    }
+    function maior(){
+        alert(document.getElementById("maior1").value > document.getElementById("maior2").value);
+    }
+    function maiorigual(){
+        alert(document.getElementById("maiorigual1").value >= document.getElementById("maiorigual2").value);
+    }
+    function menor() {
+       alert(document.getElementById("menor1").value < document.getElementById("menor2").value);
+    }
+    function menorigual() {
+        alert(document.getElementById("menorigual1").value <= document.getElementById("menorigual2").value);
+    }
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <input id="igual1" type="text"/>==<input id="igual2"type="text"/>
+    <button onclick="igual()">Comparar</button><br/>
+
+    <input id="diferente1" type="text"/> != <input id="diferente2" type="text"/>
+    <button onclick ="diferente()">Comparar</button><br/>
+
+    <input id="maior1" type="text"/> > <input id="maior2" type="text"/>
+    <button onclick="maior()">Comparar</button><br/>
+
+    <input id="maiorigual1" type="text"/>>=<input id="maiorigual2" type="text"/>
+    <button onclick="maiorigual()">Comparar</button><br/>
+
+    <input id="menor1" type="text"/> < <input id="menor2" type = "text"/>
+    <button onclick="menor()">Comparar</button><br/>
+
+    <input id="menorigual1" type="text"/> <= <input id="menorigual2" type="text"/>
+    <button onclick="menorigual()">Comparar</button>
+
+    
+
+
+    
+</body>
+</html>
