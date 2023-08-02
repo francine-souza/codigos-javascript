@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math.floor em js</title>
+</head>
+<body>
+    gerar numeros de 1 ate 10<br/>
+    <button onclick="gerar()">Gerar</button>
+    Gerado: <div id="resp"></div>
+
+    <script type="text/javascript">
+        function gerar(){
+            var resp = document.getElementById("resp")
+            resp.innerHTML = Math.floor(10 * Math.random() + 1);
+        }
+
+    </script>
+</body>
+</html>

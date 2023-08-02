@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>numero Maior</title>
-   <script type="text/javascript">
+    <title>Document</title>
 
-   function maior(){
-       var numero1= parseFloat(document.getElementById("num1").value);
-       var numero2= parseFloat(document.getElementById("num2").value);
+    <script>
+        function maior() {
+            numero1 = parseFloat(document.getElementById("num1").value);
+            numero2 = parseFloat(document.getElementById("num2").value);
 
-       if(numero1>numero2)
-           alert(numero1 + " é maior que " + numero2);
-       else
-       if(numero2 > numero1)
-         alert(numero2 + " é maior que " + numero1);
-         else
-         alert(numero1 + " é igual a " + numero2);
+            if (numero1 > numero2)
+                alert(numero1 +  "È maior que " + numero2);
 
-   }
-
-   </script>
+            else
+                if (numero2 > numero1)
+                    alert(numero2 + "È maior que " + numero1);
+                else
+                    alert(numero1 + " È igual a " + numero2);
+        }
+    </script>
 </head>
+
 <body>
-    Primeiro numero <input id="num1" type ="number"></br></br>
-    Segundo numero <input id="num2" type="number"><br><br>
+    Primeiro Número<input id="num1" type="number"> </br>
+    Segundo Número<input id="num2" type="number"></br>
     <button onclick="maior()">Calcular maior</button>
 </body>
+
 </html>

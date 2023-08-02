@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadorlogico NOT ! </title>
+    <script type="text/javascript">
+
+        function verificar(){
+            var op = parseInt(document.getElementById("option").value);
+
+            if(!op)
+            alert("Saindo do sistema...");
+            else
+            alert("Opção escolhida: " + op);
+        }
+
+    </script>
+</head>
+<body>
+    Menu:<br/>
+
+    0. Sair<br/>
+    1. Comprar<br/>
+    2. Vender<br/>
+    3. Trocar<br/>
+    4. Etc<br/>
+
+    <input id="option" type="number"><br/>
+    <button onclick="verificar()">Verificar</button>
+</body>
+</html>

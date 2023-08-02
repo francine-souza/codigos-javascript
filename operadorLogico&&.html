@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador lógico &&</title>
+    <script>
+   
+   function checar(){
+    var idade = parseInt(document.getElementById("age").value);
+    var salario = parseFloat(document.getElementById("salary").value);
+
+    if(idade > 17 && salario > 2000)
+    alert("Você esta apto para participar do consorcio")
+    else
+    alert("Você não esta apto para participar do consorcio")
+   }
+
+   
+
+    </script>
+</head>
+<body>
+    Sua idade <input id="age" type="number">
+    Seu salário <input id="salary" type="number">
+    <button onclick="checar()">Checar</button>
+</body>
+</html>

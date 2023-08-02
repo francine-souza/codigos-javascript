@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador Lógico Or ||</title>
+  
+    <script type="text/javascript">
+        function verificar(){
+            var op = parseInt(document.getElementById("option").value)
+            
+            if((op == 1)|| (op ==2)||(op ==3))
+            alert("Você tem direito a fila presencial");
+            else
+            alert("Você não tem direito a fila preferencial");
+        }
+      
+    </script>
+</head>
+<body>
+
+    Você é:<br/>
+    1.Gestante<br/>
+    2.Idoso(a)<br/>
+    3.Deficiente<br/>
+    4.Nenhuma das opções<br/>
+
+    <input id="option" type="number">
+    <button onclick="verificar()">Verificar</button>
+</body>
+</html>
